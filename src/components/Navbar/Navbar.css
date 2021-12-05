@@ -1,0 +1,11 @@
+.btn-secondary {
+    background-color: #EDB35F !important;
+    border-radius: 10px !important;
+    border: none !important;
+}
+
+.btn-nav-primary {
+    background-color: #414042 !important;
+    border-radius: 10px !important;
+    border: none !important;
+}

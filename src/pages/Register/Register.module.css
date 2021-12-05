@@ -1,0 +1,18 @@
+.style1 {
+    position: fixed;
+    bottom: -50px;
+    left: -5px;
+    margin-left: 0;
+    margin-bottom: 0;
+    width: 30%;
+}
+
+.style2 {
+    position: fixed;
+    bottom: 60px !important;
+    right: -250px;
+}
+
+.navText {
+    color: black !important;
+}

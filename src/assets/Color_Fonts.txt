@@ -1,0 +1,9 @@
+Text Fill: #EDB35F (yellow)
+Text Fill 2: #414042 (black )
+Text Fill 3: #AFB1B4 (grey text)
+Font-family: Tropiline-Bold
+Font-family 2: Lato
+
+
+color-fill: #EDB35F
+
