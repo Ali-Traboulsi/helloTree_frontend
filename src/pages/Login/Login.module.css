@@ -1,0 +1,20 @@
+.style1 {
+    position: fixed;
+    width: 600px;
+    top: 0;
+    left: -170px;
+    z-index: -2;
+}
+
+.style2 {
+    position: fixed;
+    top: 200px;
+    right: -110px;
+    width: 600px;
+    z-index: -2;
+}
+
+.navText {
+    color: black !important;
+}
+

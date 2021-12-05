@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
-
 .registerContainer {
     display: block;
     background-color: #EDB35F;
     border-radius: 20px;
     width: 30%;
-    height: 550px;
-    margin-top: 4%;
+    height: 400px;
+    margin-top: 7%;
 }
 
 .boxContainer {
@@ -77,7 +75,7 @@
     /*height: 42%;*/
 }
 
-.directToSignIn {
+.directToSignUp {
     text-decoration: none;
     color: black;
     font-weight: bold;

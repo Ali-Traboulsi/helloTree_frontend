@@ -2,9 +2,9 @@ import React from 'react';
 import {
     BrowserRouter as Router,
     Route,
-    Routes,
-    useHistory,
-    Navigate
+    Switch,
+    Redirect,
+    useHistory
 } from 'react-router-dom';
 // import {Redirect } from "react-router";
 import Logo from "./components/Logo/Logo";
@@ -15,6 +15,7 @@ import ProfileIcon from "./components/Icons/ProfileIcon";
 
 import Home from "./pages/Home/Home";
 import Register from "./pages/Register/Register";
+import Login from "./pages/Login/Login";
 
 const authRoute = (Component) => () => {
     // const response = await adminLogin(data);
@@ -22,20 +23,21 @@ const authRoute = (Component) => () => {
     if (localStorage.getItem('access_token')) {
         return <Component/>
     } else {
-        return <Route to='/login'/>
+        return <Redirect to='/login'/>
     }
 }
 
 const App = props => {
     return (
         <Router {...props}>
-            <Routes>
+            <Switch>
                 <Route exact path="/">
-                    <Route to="/home"/>
+                    <Redirect to="/home"/>
                 </Route>
-                <Route path='/home' element={<Home/>}/>
-                <Route path="/register" element={<Register/>}/>
-            </Routes>
+                <Route path='/home' component={Home} />
+                <Route path="/register" component={Register}/>
+                <Route path="/login" component={Login}/>
+            </Switch>
         </Router>
     );
 };
